@@ -1,0 +1,431 @@
+\documentclass[hidelinks,aspectratio=169]{beamer}
+\usepackage[italian]{babel} 
+\usepackage[utf8]{inputenc} 
+\usepackage{fourier} 
+
+
+%Slide colors
+\usetheme{Boadilla}
+\usecolortheme{beaver}
+
+% Images
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\graphicspath{ {../Images} }
+
+% FlowChart
+\usepackage{smartdiagram}
+
+% Stop hyphenation
+\usepackage[none]{hyphenat}
+
+% Coloring links
+\usepackage{xcolor}
+
+% Enumerate abc
+\usepackage{enumerate}
+
+% Minipages in the same line
+\usepackage{tabularx}
+
+% Redefines caption setup in way to remove "Figure:"
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}
+
+% License
+\usepackage[
+type={CC},
+modifier={by-nc-sa},
+version={4.0},
+]{doclicense}
+
+% Command to enumerate frames title
+\newcommand{\numcirc}[1]{%
+	%   \usebeamerfont*{item projected}%
+	\large
+	\usebeamercolor[bg]{item projected}%
+	\begin{pgfpicture}{-1ex}{0ex}{1ex}{2ex}
+		\pgfpathcircle{\pgfpoint{0pt}{.75ex}}{1.2ex}
+		\pgfusepath{fill}
+		\pgftext[base]{\color{fg}#1}
+	\end{pgfpicture}%
+	\usebeamerfont*{frametitle}%
+}
+
+%Command to zoom in
+\usepackage{mwe}
+\makeatletter
+\newsavebox\zb@x
+\newcounter{z@@m}
+\usepackage{calc}
+\newdimen\B@r\newdimen\P@r
+\newdimen\@zw\newdimen\@zh\newdimen\@zd
+
+\newcommand{\zoombox}[2][0]{%
+	\leavevmode%
+	\sbox\zb@x{#2}%
+	\setlength\B@r{1pt*\ratio{\wd\zb@x}{\ht\zb@x+\dp\zb@x}}%
+	\setlength\P@r{1pt*\ratio{\paperwidth}{\paperheight}}%
+	\ifdim\B@r>\P@r\relax%
+	\setlength\@zw{\wd\zb@x}\setlength\@zh{\@zw*\ratio{\paperheight}{\paperwidth}}%
+	\setlength\@zd{(\@zh-\ht\zb@x-\dp\zb@x)*\real{0.5}+\dp\zb@x}%
+	\setlength\@zh{\@zh-\@zd}%
+	\else%
+	\setlength\@zh{\ht\zb@x+\dp\zb@x}%
+	\setlength\@zw{\@zh*\ratio{\paperwidth}{\paperheight}}%
+	\setlength\@zh{\ht\zb@x}\setlength\@zd{\dp\zb@x}%
+	\fi%
+	\makebox[0pt][l]{\makebox[\wd\zb@x][c]{\makebox[\@zw][l]{%
+				\pdfdest name {zbfs\thez@@m} fitr
+				width  \@zw\space
+				height \@zh\space
+				depth  \@zd\space
+	}}}%
+	\pdfdest name {zb\thez@@m} fitr
+	width  \wd\zb@x\space
+	height \ht\zb@x\space
+	depth  \dp\zb@x\space
+	\immediate\pdfannot 
+	width  \wd\zb@x\space
+	height \ht\zb@x\space
+	depth  \dp\zb@x\space
+	{%
+		/Subtype/Link/H/N
+		/Border [0 0 #1 [1 2]]
+		/A <<
+		/S/JavaScript
+		/JS (
+		if(typeof(zoomed)=='undefined'||!zoomed){
+			var lastView=this.viewState;
+			if(app.fs.isFullScreen) this.gotoNamedDest('zbfs\thez@@m');
+			else this.gotoNamedDest('zb\thez@@m');
+			zoomed=true;
+		}else{
+			this.viewState=lastView;
+			zoomed=false;
+		}
+		)
+		>>
+	}%
+	\usebox{\zb@x}%
+	\stepcounter{z@@m}%
+} 
+\makeatother
+
+
+
+%Header
+\title[Identità e valore della stampa d'arte]{\textbf{Identità e valore della stampa d'arte}}
+\author{Roberto Budassi}
+\date{}
+
+\begin{document}
+	
+		\begin{frame}
+		\maketitle
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt
+		\fbox
+		{
+			\begin{minipage}{0.9\linewidth}
+				\small{Il seguente documento è ottimizzato per la visualizzazione digitale con \href{https://get.adobe.com/it/reader/}{\textcolor{blue}{Adobe~Acrobat~Reader}}.}  
+			\end{minipage}
+		}
+	\end{frame}
+	
+	\begin{frame}
+		\tableofcontents
+	\end{frame}
+	
+	%--------------------- Include from here  -----------------
+	
+	\section{Tiratura, segnatura e numerazione}
+	\begin{frame}{Tiratura, segnatura e numerazione}
+		\begin{itemize}
+			\item Bon a Tirer
+			\item Tiratura corrente: non numerata e non firmata – a forte tiratura (acciaiatura)
+			\item Numerazione araba: 1/100 – 100/100
+			\item Numerazione romana: I/XV – XV/XV
+			\item Alfabetica: a, b, c, d, … etc. etc
+			\item Prova d’artista - prova d’autore - épreuve d’artiste - artist’s proof: P.A., P.d.A., E.A., A.P. 
+			\item Fuori Commercio - Hors Commerce: F.C. H.C.
+			\item Prova di Stampa: P.d.S.; E.E.
+			\item Prova colore: P.C., P.d.C.
+			\item Tiratura dopo la biffatura (cancellazione) del rame
+		\end{itemize}
+		\medskip
+		\begin{itemize}
+			\item Tiratura coeva
+			\item Tiratura postuma
+			\item Tiratura tarda
+			\item Tiratura moderna
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{Tiratura, segnatura e numerazione}
+		\begin{tabularx}{\linewidth}{XXX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.09]{Pablo Picasso, soggetti dalla serie 374-1.png}}
+			}&{
+			\centering
+			\hspace*{1.7mm}
+			\zoombox{\includegraphics[scale=0.2]{Pablo Picasso, soggetti dalla serie 374-2.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.205]{Pablo Picasso, soggetti dalla serie 374-3.png}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Pablo Picasso, soggetti dalla serie 374, esemplari di Bon a tirer, Prova d’artista e in numerazione araba}
+	\end{frame}
+	
+	\subsection{Il remarque}
+	\begin{frame}{Il remarque}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{19mm}
+			\zoombox{\includegraphics[scale=0.4]{Pablo Picasso, frammento di corpo1.jpg}}
+			}&{
+			\centering
+			\hspace*{9mm}
+			\zoombox{\includegraphics[scale=0.41]{Pablo Picasso, frammento di corpo2.jpg}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Pablo Picasso, frammento di corpo, da Le metamorfosi di Ovidio, acquaforte}
+	\end{frame}
+	
+	\subsection{La biffatura}
+	\begin{frame}{La biffatura}
+		\begin{tabularx}{\linewidth}{XXX}
+			{
+			\centering
+			%\hspace*{19mm}
+			\zoombox{\includegraphics[scale=0.4]{Pablo Picasso, frammento di corpo1.jpg}}
+			}&{
+			\centering
+			%\hspace*{9mm}
+			\zoombox{\includegraphics[scale=0.41]{Pablo Picasso, frammento di corpo2.jpg}}
+			}&{
+			\centering
+			%\hspace*{9mm}
+			\zoombox{\includegraphics[scale=0.51]{Pablo Picasso, frammento di corpo3.png}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Pablo Picasso, frammento di corpo, da Le metamorfosi di Ovidio, acquaforte}
+	\end{frame}
+	
+	\begin{frame}{La biffatura}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{8mm}
+			\zoombox{\includegraphics[scale=0.7]{Edgar Degas1.png}}
+			}&{
+			\centering
+			\hspace*{8mm}
+			\zoombox{\includegraphics[scale=0.24]{Edgar Degas2.png}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Edgar Degas, Le stiratrici, acquaforte e acquatinta}
+	\end{frame}
+	
+	\subsection{La rarità}
+	\begin{frame}{La rarità}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+				\vspace*{-5mm}
+			\small{Rarità (riguarda la quantità di esemplari)}
+			\begin{itemize}
+				\item[] 
+				\begin{itemize}
+					\item \footnotesize{Unico}
+					\item \footnotesize{Rarissimo}
+					\item \footnotesize{Raro}
+					\item \footnotesize{Comune}
+				\end{itemize}
+				
+			\end{itemize}
+			%\bigskip
+			\small{Qualità (riguarda la bellezza dell'impressione)}
+			\begin{itemize}
+				\item \footnotesize{Stampe moderne}
+				\vspace*{-1mm}
+				\begin{itemize}
+					\item \footnotesize{Perfetto esemplare}
+				\end{itemize}
+				\item \footnotesize{Stampe antiche}
+				\vspace*{-1mm}
+				\begin{itemize}
+					\item \footnotesize{Splendida}
+					\item \footnotesize{Magnifica}
+					\item \footnotesize{Bellissima}
+					\item \footnotesize{Bella}
+					\item \footnotesize{Discreta}
+					\item \footnotesize{Mediocre}
+					\item \footnotesize{Stanca}
+					\item \footnotesize{Povera}
+				\end{itemize}
+			\end{itemize}
+			}&{
+			\vspace*{15mm}
+			\begin{tabularx}{\linewidth}{XX}
+				{
+				\centering
+				\zoombox{\includegraphics[scale=0.21]{Paul Gauguin1.jpg}}
+				}&{
+				\centering
+				\zoombox{\includegraphics[scale=0.2]{Paul Gauguin2.png}}
+				}
+			\end{tabularx}
+			\centering
+			\small{Paul Gauguin, La mercante di fichi, acquaforte e acquatinta}
+			}
+		\end{tabularx}
+	\end{frame}
+	
+	\begin{frame}{La rarità}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{15mm}
+			\zoombox{\includegraphics[scale=0.07]{Rembrandt9.jpg}}
+			}&{
+			\centering
+			\hspace*{15mm}
+			\zoombox{\includegraphics[scale=0.4]{Rembrandt10.jpg}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Rembrandt, Cristo che guarisce gli ammalati o stampa dei cento fiorini, acquaforte, acquatinta e puntasecca - Pablo Picasso, Il pasto frugale, acquaforte}
+	\end{frame}
+	
+	\begin{frame}{La rarità}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{15mm}
+			\zoombox{\includegraphics[scale=0.25]{Vincent Van Gogh1.jpg}}
+			}&{
+			\centering
+			\hspace*{15mm}
+			\zoombox{\includegraphics[scale=0.51]{Vincent Van Gogh2.jpg}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Vincent Van Gogh, I mangiatori di patate, litografia - Ritratto del Dottor Gachet, acquaforte}
+	\end{frame}
+	
+	\begin{frame}{La rarità}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{11mm}
+			\zoombox{\includegraphics[scale=0.7]{Rembrandt11.jpg}}
+			}&{
+			\centering
+			\hspace*{11mm}
+			\zoombox{\includegraphics[scale=0.37]{Rembrandt12.jpg}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Rembrandt, La morte della Vergine Maria, acquaforte e puntasecca nelle prima tiratura e in tiratura moderna}
+	\end{frame}
+	
+	\subsection{Misure e Margini}
+	\begin{frame}{Misure e Margini}
+		\centering \textbf{Misure}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+				\vspace*{-35mm}
+				\begin{itemize}
+					\item \footnotesize{\textbf{Matrice}\\ Altezza per larghezza, in millimetri, rilevate:}
+					\begin{itemize}
+						\item \footnotesize{All'impronta del rame}
+						\item \footnotesize{Ai margini dell'impressione xilografica}
+						\item \footnotesize{Ai limiti del disegno litografico}
+					\end{itemize}
+					\item \footnotesize{\textbf{Foglio}\\ Altezza per larghezza, in centimetri}
+				\end{itemize}
+			}&{
+			\centering
+			\hspace*{15mm}
+			\zoombox{\includegraphics[scale=0.6]{Marc Chagall1.jpg}}
+			}
+		\end{tabularx}
+		\centering \textbf{Margini}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+				\vspace*{-35mm}
+				\begin{itemize}
+					\item \footnotesize{Tagliati all’interno dell’impronta}
+					\item \footnotesize{Tagliati all’impronta del rame}
+					\item \footnotesize{Editoriali (senza margini)}
+					\item \footnotesize{Tagliati oltre l’impronta de rame per mm…}
+					\item \footnotesize{Intonsi (misure del foglio)}
+					\item \footnotesize{Rimarginato (ricostruito)}
+				\end{itemize}
+				\begin{minipage}{\linewidth}
+						\tiny{Marc Chagall, Il bouquet di fiori, litografia a colori in tiratura de luxe con grandi margini e in tiratura corrente con margini editoriali}
+				\end{minipage}
+			}&{
+			\centering
+			\hspace*{15mm}
+			\zoombox{\includegraphics[scale=0.27]{Marc Chagall2.png}}
+			}
+		\end{tabularx}
+	\end{frame}
+	
+	\subsection{Autenticità e datazione}
+	\begin{frame}{\textbf{Autenticità e datazione}\\ Il supporto: carta e filigrana}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{8mm}
+			\zoombox{\includegraphics[scale=0.4]{Carta1.png}}
+			}&{
+			\centering
+			\hspace*{8mm}
+			\zoombox{\includegraphics[scale=0.15]{Carta2.png}}
+			}
+		\end{tabularx}
+	\end{frame}
+	
+	\subsection{Monogrammi - Firma - Timbri}
+	\begin{frame}{Monogrammi - Firma - Timbri}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{8mm}
+			\zoombox{\includegraphics[scale=0.4]{Monogramma1.jpg}}
+			}&{
+			\vspace*{-40mm}
+			Inscrizioni di attribuzione e responsabilità
+			\begin{itemize}
+				\item \footnotesize{Inv.., invenit, inventor: inventore del soggetto}
+				\item \footnotesize{p. pin., pinxit: chi dipinse il soggetto}
+				\item \footnotesize{del. – delin.: delineavit: disegnatore del soggetto}
+				\item \footnotesize{Exc. Excudit: stampatore}
+				\item \footnotesize{f., faciebat, fec., fecit: incisore del soggetto}
+				\item \footnotesize{Scalp., scalpsit, sculp., Sculpsit: incise }
+			\end{itemize}
+			}
+		\end{tabularx}
+		\vspace*{3mm}
+		\centering
+		\zoombox{\includegraphics[scale=0.25]{Monogramma2.png}}
+	\end{frame}
+	
+	\begin{frame}{Monogrammi - Firma - Timbri}
+		contenuto...
+	\end{frame}
+	
+\end{document}

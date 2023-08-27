@@ -30,6 +30,10 @@
 % Minipages in the same line
 \usepackage{tabularx}
 
+% Redefines caption setup in way to remove "Figure:"
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}
+
 % License
 \usepackage[
 type={CC},
@@ -218,21 +222,377 @@ version={4.0},
 			{
 			\centering
 			\zoombox{\includegraphics[scale=0.5]{Esempio1.jpg}}
-			\captionof{figure}{Esempio 1}
+			\captionof{figure}{Matrice xilografica}
 			}&{
 			\centering
 			\zoombox{\includegraphics[scale=0.15]{Esempio2.jpg}}
-			\captionof{figure}{Esempio 2}
+			\captionof{figure}{Matrice  incavografica}
 			}&{
 			\centering
 			\zoombox{\includegraphics[scale=0.17]{Esempio3.jpg}}
-			\captionof{figure}{Esempio 3}
+			\captionof{figure}{Matrice litografica}
 			}
 		\end{tabularx}
 	\end{frame}
 	
-	\begin{frame}
-		contenuto...
+	\begin{frame}{Le tecniche originali}
+		\begin{tabularx}{\textwidth}{XXX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.13]{Macchina1.jpg}}
+			%\captionof{figure}{Esempio 1}
+			\zoombox{\includegraphics[scale=0.5]{Macchina11.jpg}}
+			\captionof{figure}{Stampa xilografica}
+			}&{
+			\centering
+			\hspace{2mm}
+			\zoombox{\includegraphics[scale=0.25]{Macchina2.jpg}}
+			%\captionof{figure}{Esempio 1}
+			\vspace*{3mm}
+			\zoombox{\includegraphics[scale=0.5]{Macchina22.png}}
+			\captionof{figure}{Stampa in incavo}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.33]{Macchina3.jpg}}
+			%\captionof{figure}{Esempio 1}
+			\vspace{3mm}
+			\zoombox{\includegraphics[scale=0.3]{Macchina33.jpg}}
+			\captionof{figure}{Stampa litografica}
+			}
+		\end{tabularx}
+	\end{frame}
+	
+	\begin{frame}{Le tecniche originali}
+		\begin{tabularx}{\textwidth}{XXX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.3]{Pietro Sanchini, xilografia.png}}
+			\captionof{figure}{\centering Pietro Sanchini, xilografia}
+			}&{
+			\centering
+			\hspace*{-7mm}
+			\zoombox{\includegraphics[scale=0.3]{Renato Bruscaglia, acquaforte.jpg}}
+			\captionof{figure}{\centering \hspace*{-7mm} Renato Bruscaglia, acquaforte}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.3]{Carlo Ceci, litografia.png}}
+			\captionof{figure}{\centering Carlo Ceci, litografia}
+			}
+		\end{tabularx}
+	\end{frame}
+	
+	\subsection{La stampa di traduzione}
+	\begin{frame}{La stampa di traduzione (autografa)}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace{10mm}
+			\zoombox{\includegraphics[scale=0.14]{Federico Barocci, Annunciazione, olio su tela.jpg}}
+			}&{
+			\centering
+			\hspace{10mm}
+			\zoombox{\includegraphics[scale=0.23]{Federico Barocci, Annunciazione, bulino-acquaforte.jpg}}
+			}
+		\end{tabularx}
+		%\hspace*{8mm}
+		\centering
+		\small{Federico Barocci, Annunciazione, olio su tela – bulino/acquaforte.}
+	\end{frame}
+	
+	\begin{frame}{La stampa di traduzione}
+		\vspace*{3mm}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.28]{Federico Barocci, Deposizione, olio su tela.jpg}}
+			\captionof{figure}{\centering Federico Barocci, Deposizione, olio su tela}
+			}&{
+			\centering
+			%\vspace*{-15mm}
+			\zoombox{\includegraphics[scale=0.35]{Egidius Sadeler, Deposizione da Brocci, bulino-acquaforte.jpg}}
+			\captionof{figure}{\centering Egidius Sadeler, Deposizione da Brocci, bulino/acquaforte}
+			}
+		\end{tabularx}
+	\end{frame}
+	
+	\begin{frame}{La stampa di traduzione}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\hspace*{4mm}
+			\centering
+			\zoombox{\includegraphics[scale=0.13]{Durand Ruel1.png}}
+			}&{
+			\hspace*{4mm}
+			\centering
+			\zoombox{\includegraphics[scale=0.3]{Durand Ruel2.jpg}}
+			}		
+		\end{tabularx}
+		%\vspace*{2mm}
+		\centering
+		\small{Durand Ruel, Strada vicino Voisin, da Camille Pissarro, olio su tela, 1873}
+	\end{frame}
+	
+	\subsection{La stampa di invenzione}
+	\begin{frame}{La stampa di invenzione}
+		\begin{tabularx}{\linewidth}{X}
+			\centering
+			\vspace*{2mm}
+			\zoombox{\includegraphics[scale=0.17]{Federico Barocci, Madonna delle nuvole, acquaforte e bulino.jpg}}
+			\captionof{figure}{\centering Federico Barocci, Madonna delle nuvole, acquaforte e bulino}
+		\end{tabularx}
+	\end{frame}
+	
+	\begin{frame}{La copia}
+		\begin{tabularx}{\linewidth}{XXX}
+			{
+			\centering
+			\hspace*{2mm}
+			\zoombox{\includegraphics[scale=0.35]{Madonna1.jpg}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.35]{Madonna2.jpg}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.173]{Madonna3.jpg}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Autore ignoto e Agostino Carracci, Madonna delle nuvole, copie da Federico Barocci, bulino/acquaforte}
+	\end{frame}
+	
+	\begin{frame}{Stampa di invenzione}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{3mm}
+			\zoombox{\includegraphics[scale=0.8]{Leonardo Castellani1.jpg}}
+			}&{
+			\centering
+			\hspace*{12mm}
+			\zoombox{\includegraphics[scale=0.4]{Leonardo Castellani2.jpg}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Leonardo Castellani, Natura morta e Paesaggio, acquaforti}
+	\end{frame}
+	
+	\begin{frame}{Stampa di invenzione (dall'incisione alla pittura e viceversa)}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{40mm}
+			\zoombox{\includegraphics[scale=0.2]{Giorgio Morandi1.jpg}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.11]{Giorgio Morandi2.jpg}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Giorgio Morandi, Grande natura morta}
+		\begin{tabularx}{\linewidth}{XX}
+				{
+				\centering
+				\hspace*{40mm}
+				\zoombox{\includegraphics[scale=0.5]{Casolare di Grizzana1.jpg}}
+			}&{
+				\centering
+				\zoombox{\includegraphics[scale=0.123]{Casolare di Grizzana2.jpg}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Casolare di Grizzana, olio su tela e acquaforte}
+	\end{frame}
+	
+	\begin{frame}{Stampa di invenzione (dall'incisione alla pittura e viceversa)}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.3]{Edvard Munch, Ragazze sul ponte, xilografia.jpg}}
+			\captionof{figure}{\centering Edvard Munch, Ragazze sul ponte, xilografia}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.6]{Bambina malata, litografia.jpg}}
+			\captionof{figure}{\centering Bambina malata, litografia}
+			}
+		\end{tabularx}
+	\end{frame}
+	
+	\subsection{Stampa d'après}
+	\begin{frame}{Stampa d'après}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\zoombox{\includegraphics[trim={7mm 3mm 8mm 5mm}, clip, scale=0.6]{George Braque1.png}}
+			}&{
+			\centering
+			\hspace*{15mm}
+			\zoombox{\includegraphics[scale=0.6]{George Braque2.jpg}}
+			}
+		\end{tabularx}
+		\centering
+		\small{George Braque, Le nid vert, acquerello, inchiostro e matita su carta – d’aprés acquaforte e acquatinta }
+	\end{frame}
+	
+	\begin{frame}{Stampa d'après}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{20mm}
+			\zoombox{\includegraphics[scale=0.35]{Francis Bacon1.jpg}}
+			}&{
+			\centering
+			\hspace*{10mm}
+			\zoombox{\includegraphics[scale=0.25]{Francis Bacon2.png}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Francis Bacon, Studio di corpo umano, olio su tela – d’aprés acquaforte e acquatinta, 2RC Roma}
+	\end{frame}
+	
+	\subsection{Serigrafia fra originalità e riproduzione}
+	\begin{frame}{Serigrafia fra originalità e riproduzione}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.45]{Andy Warhol.jpg}}
+			\captionof{figure}{\centering Andy Warhol, Marilyn, serigrafia }
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.43]{Mario Schifano.jpg}}
+			\captionof{figure}{\centering Mario Schifano, I gigli d’acqua, serigrafia}
+			}
+		\end{tabularx}
+	\end{frame}
+	
+	\subsection{Falso e contraffazione}
+	\begin{frame}{Falso e contraffazione}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.43]{Rembrandt1.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.33]{Rembrandt2.jpg}}
+			}
+		\end{tabularx}
+		\centering
+		\small{Rembrandt, Il vecchio mulino, acquaforte e puntasecca – da Rembrandt, Il vecchio mulino, copia acquaforte e puntasecca}
+	\end{frame}
+	
+	\begin{frame}{Copia, falso e contraffazione}
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\centering
+			\hspace*{15mm}
+			\zoombox{\includegraphics[scale=0.5]{Giuseppe Capogrossi1.png}}
+			\newline
+			\begin{minipage}{\linewidth}
+				\vspace*{2mm}
+				\hspace*{15mm}
+				\zoombox{\includegraphics[scale=0.5]{Giuseppe Capogrossi2.png}}
+			\end{minipage}
+			}&{
+			\centering
+			\hspace*{5mm}
+			\zoombox{\includegraphics[scale=0.5]{Giuseppe Capogrossi3.png}}
+			\newline
+			\begin{minipage}{\linewidth}
+				\vspace*{2mm}
+				\hspace*{5mm}
+				\zoombox{\includegraphics[scale=0.5]{Giuseppe Capogrossi4.png}}
+			\end{minipage}
+			}
+		\end{tabularx}
+		\begin{minipage}{\linewidth}
+			\vspace*{2mm}
+			\centering
+			\small{Da Giuseppe Capogrossi, litografia (capovolta) – Giuseppe Capogrossi, litografia}
+		\end{minipage}
+	\end{frame}
+	
+	\subsection{Varianti di stato}
+	\begin{frame}{Varianti di stato}
+		\begin{tabularx}{\linewidth}{XXXX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.2]{Rembrandt3.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.25]{Rembrandt4.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.15]{Rembrandt5.png}}
+			}&{
+			\vspace*{-30mm}
+			\begin{flushleft}
+					\small{Rembrandt, Autoritratto alla finestra, acquaforte e puntasecca nei vari stati}
+			\end{flushleft}
+			}
+		\end{tabularx}
+		\begin{tabularx}{\linewidth}{XXXX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.13]{Rembrandt6.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.27]{Rembrandt7.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.165]{Rembrandt8.png}}
+			}&{
+			}
+		\end{tabularx}
+		
+	\end{frame}
+	
+	\begin{frame}{Varianti di stato}
+		\begin{tabularx}{\linewidth}{XXXX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.08]{Pablo Picasso1.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.1]{Pablo Picasso2.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.18]{Pablo Picasso3.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.18]{Pablo Picasso4.png}}
+			}
+		\end{tabularx}
+		\begin{tabularx}{\linewidth}{XXXX}
+			{
+			\centering
+			\zoombox{\scalebox{-1}[1]{\includegraphics[scale=0.08]{Pablo Picasso5.png}}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.45]{Pablo Picasso6.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.15]{Pablo Picasso7.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.14]{Pablo Picasso8.png}}
+			}
+		\end{tabularx}
+		\begin{tabularx}{\linewidth}{XXXX}
+			{
+			\centering
+			\zoombox{\includegraphics[scale=0.1]{Pablo Picasso9.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.45]{Pablo Picasso10.png}}
+			}&{
+			\centering
+			\zoombox{\includegraphics[scale=0.1]{Pablo Picasso11.png}}
+			}&{
+			\vspace*{-20mm}
+			\begin{flushleft}
+				\small{Pablo Picasso, Toro, litografia negli undici stati}
+			\end{flushleft}
+			}
+		\end{tabularx}
 	\end{frame}
 	
 \end{document}
