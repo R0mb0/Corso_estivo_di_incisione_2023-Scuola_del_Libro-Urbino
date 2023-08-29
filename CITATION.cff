@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this work (only for didactic purpose), please cite it as below."
+authors:
+- family-names: "Budassi"
+  given-names: "Roberto"
+title: "Urbino-Corso_Estivo_di_incisione_2023"
+version: 1.0.0
+date-released: 2023-08-29
+url: "https://github.com/R0mb0/Urbino-Corso_Estivo_di_incisione_2023"
