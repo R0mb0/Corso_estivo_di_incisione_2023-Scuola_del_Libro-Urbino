@@ -1,0 +1,16 @@
+name: Compilation_Test
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download repo files
+        uses: actions/checkout@v4.1.0
+      - name: Compile files
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: Corso_di_Incisione
+          root_file: Corso_di_Incisione_2023-Slides.tex
