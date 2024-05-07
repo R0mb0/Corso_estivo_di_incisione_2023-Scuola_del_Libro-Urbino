@@ -7,8 +7,8 @@ write bug report, contribute code or documentation.
 
 ## Working on your first Pull Request?
 
-You can learn how from this *free* series 
-[How to Contribute to an Open Source Project on GitHub]
+You can learn how from this *free* series
+ [How to Contribute to an Open Source Project on GitHub]
 (<https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github>)
 
 ## Reporting issues
@@ -32,6 +32,7 @@ You can contribute by updating the package content or styling, code (
 ### Contributing content or styling
 
 There is a couple of basic requirement for us to merge the pull request:
+
 - The styling should maintain the compatibility with previous versions.
  For example, if you plan to add a new number to the contact information,
  it should be optional and not mandatory allowing not to change anything
@@ -39,15 +40,17 @@ There is a couple of basic requirement for us to merge the pull request:
 
 ### Contributing code
 
-If the change is big, typically if the change span to more than one file, 
-consider starting an issue first to discuss the improvement.
-This will makes it much easier to make the change fit well into the package.
+If the change is big, typically if the change span to more than one file,
+ consider starting an issue first to discuss the improvement.
+ This will makes it much easier to make the change fit well into the package.
 
 There is some basic requirement for us to merge a pull request:
+
 - Describe the change
 - Refer to any issues it effects
 - Separate one pull request per functionality: if you start writing "and" 
 in the feature description consider if it could be separated in two pull requests.
 
 In your code:
+
 - Make sure the coding style of your code follows the style of the file.
