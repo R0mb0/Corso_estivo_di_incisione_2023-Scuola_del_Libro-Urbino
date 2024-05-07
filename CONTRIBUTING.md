@@ -9,15 +9,15 @@ write bug report, contribute code or documentation.
 
 You can learn how from this *free* series 
 [How to Contribute to an Open Source Project on GitHub]
-(https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+(<https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github>)
 
 ## Reporting issues
 
 When reporting issues the more information you can supply the better.
 
-If it is an issue with building the LaTeX package, indicate your 
-environment like operating system and,
-version of MikTeX your are using.
+If it is an issue with building the LaTeX package, indicate your
+ environment like operating system and,
+ version of MikTeX your are using.
 
 ## Improvements request and proposal
 
@@ -32,10 +32,10 @@ You can contribute by updating the package content or styling, code (
 ### Contributing content or styling
 
 There is a couple of basic requirement for us to merge the pull request:
-- The styling should maintain the compatibility with previous versions. F
-or example, if you plan to add a new number to the contact information, 
-it should be optional and not mandatory allowing not to change anything 
-to the other users of the package.
+- The styling should maintain the compatibility with previous versions.
+ For example, if you plan to add a new number to the contact information,
+ it should be optional and not mandatory allowing not to change anything
+ to the other users of the package.
 
 ### Contributing code
 
