@@ -1,4 +1,4 @@
-<h1>Contributor Covenant Code of Conduct</h1>
+# Contributor Covenant Code of Conduct
 
 ## Our Pledge
 
