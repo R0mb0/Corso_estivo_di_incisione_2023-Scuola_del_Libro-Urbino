@@ -9,8 +9,8 @@
 # Corso estivo di incisione 2023 presso la Scuola Del Libro di Urbino  
 
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ac138d4fb43748ce87721ead2083b2e3)](https://app.codacy.com/gh/R0mb0/Corso_estivo_di_incisione_2023-Scuola_del_Libro-Urbino/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Compilation_Test](https://github.com/R0mb0/Corso_estivo_di_incisione_2023-Scuola_del_Libro-Urbino/actions/workflows/Compilation_test.yml/badge.svg)](https://github.com/R0mb0/Corso_estivo_di_incisione_2023-Scuola_del_Libro-Urbino/actions/workflows/Compilation_test.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ac138d4fb43748ce87721ead2083b2e3)](https://app.codacy.com/gh/R0mb0/Corso_estivo_di_incisione_2023-Scuola_del_Libro-Urbino/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## License
 
