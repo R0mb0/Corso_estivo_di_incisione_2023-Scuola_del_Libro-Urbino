@@ -12,6 +12,9 @@
 [![Compilation_Test](https://github.com/R0mb0/Corso_estivo_di_incisione_2023-Scuola_del_Libro-Urbino/actions/workflows/Compilation_test.yml/badge.svg)](https://github.com/R0mb0/Corso_estivo_di_incisione_2023-Scuola_del_Libro-Urbino/actions/workflows/Compilation_test.yml)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/ac138d4fb43748ce87721ead2083b2e3)](https://app.codacy.com/gh/R0mb0/Corso_estivo_di_incisione_2023-Scuola_del_Libro-Urbino/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/R0mb0/Corso_estivo_di_incisione_2023-Scuola_del_Libro-Urbino)
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/R0mb0/Corso_estivo_di_incisione_2023-Scuola_del_Libro-Urbino)
+
 ## License
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
